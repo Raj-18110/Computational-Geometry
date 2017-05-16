@@ -32,5 +32,5 @@ join these points and the result is the required convex hull.
 
 
 
-Overall Complexity is O(K^2) but it can be reduced to O(klogk) if we use better sorting algorithm.
+Overall Complexity is O(K^2) but it can be reduced to O(klogk) if we use better sorting algorithm .
 
