@@ -1,0 +1,36 @@
+step1:-
+
+First apply the slow convex hull for the vertices of the convex polygon(which will be provided as input) and Find the all the points that lie inside the convex polygon 
+complexity is of O(n1*n) because we know the vertices of convex polygon(n1) and we need to check with the remaining vertices(n-n1) and the combination is also know to us.
+
+step2:-
+
+Delete these points which lie inside the convex polygon
+Complexity is of O(m) [where m is no.of internal points]
+
+step3:-
+
+Sort the remaining points by their x-coordinates
+Complexity is of O(k^2) [where k is remaining points including vertices of the convex polygon] 
+"complexity is high because i used normal sorting in my code which can be improved to O(klogk) by using quicksort or mergesort or heapsort".
+
+step4:-
+
+Apply upper convex hull algorithm for sort vertices from 1 to k-1
+complexity is of O(k)
+
+step4:-
+
+apply lower convex hull algorithm for sort vertices from k to 2
+
+complexity is of O(k)
+
+step5:-
+
+join these points and the result is the required convex hull.
+
+
+
+
+Overall Complexity is O(K^2) but it can be reduced to O(klogk) if we use better sorting algorithm.
+
